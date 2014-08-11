@@ -17,15 +17,24 @@ shinyUI(pageWithSidebar(
                 "Shape parameter 1 (a):",
                 min=0,
                 max=1000,
-                value=1),
+                value=1,
+                step=0.01),
     
     numericInput("shape2",
                 "Shape parameter 2 (b):",
                 min=0,
                 max=1000,
-                value=1),
+                value=1,
+                step=0.01),
+    
+    selectInput("binwidth",
+                "Binwidth:",
+                choices=c(0.01,0.1)),
+    
     hr(),
-    helpText("Generates a random sample from the beta distribution. Range: 0-1.")
+    helpText("Generates a random sample from the beta distribution."),
+    helpText("Shape parameters accurate to two decimal places"),
+    helpText("Ouput values Range: 0-1.")
   ),
   
   # GGPLOT
