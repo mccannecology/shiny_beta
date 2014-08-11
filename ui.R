@@ -27,10 +27,6 @@ shinyUI(pageWithSidebar(
                 value=1,
                 step=0.01),
     
-    selectInput("binwidth",
-                "Binwidth:",
-                choices=c(0.01,0.1)),
-    
     hr(),
     helpText("Generates a random sample from the beta distribution."),
     helpText("Shape parameters accurate to two decimal places"),
