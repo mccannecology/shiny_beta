@@ -15,7 +15,12 @@ shinyServer(function(input,output){
     p <- p + xlab("Value")
     p <- p + theme_classic(base_size=18)
     p
-  })
+    
+  },
+  width=400,
+  height=400
+  
+  )
   
   # Generate a summary of the data
   # Mean 

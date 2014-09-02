@@ -30,6 +30,7 @@ shinyUI(pageWithSidebar(
     hr(),
     helpText("Generates a random sample from the beta distribution."),
     helpText("Shape parameters accurate to two decimal places"),
+    helpText("Enter a 0 before decimal values e.g., '0.1'"),
     helpText("Ouput values Range: 0-1.")
   ),
   
